@@ -19,12 +19,12 @@ function Nav() {
       </h1>
       <ul>
         {list.filter(({ category }) => category === SECTION.PROYECTOS)
-          .sort((a, b) => b.id - a.id )
+          .sort((a, b) => b.id - a.id)
           .map(({ navTitle, pathNav }, index) => (
             <li className='nav-item align-top'
               key={index}>
               <NavLink to={pathNav}
-                className={({ isActive }) => linkStyle(isActive)}>
+                className={({ isActive }) => linkStyle(isActive).toString()}>
                 {navTitle}
               </NavLink>
             </li>
@@ -34,29 +34,27 @@ function Nav() {
         </li>
         <li className='nav-item'>
           <NavLink to='/bio'
-            className={({ isActive }) => linkStyle(isActive)}>
+            className={({ isActive }) => linkStyle(isActive).toString()}>
             Bio & CV
           </NavLink>
 
-         
+
         </li>
         <li className='nav-item'>
-          <a target="_blank" href="https://www.instagram.com/jorge.rido/" rel="noopener noreferrer"
-            className={({ isActive }) => linkStyle(isActive)}>
+          <a target="_blank" href="https://www.instagram.com/jorge.rido/" rel="noopener noreferrer">
             Instagram
           </a>
 
-         
+
         </li>
         <li className='nav-item'>
-          <a target="_blank" href="mailto:jorgedabalina@gmail.com?Subject=Hola!" rel="noopener noreferrer"
-            className={({ isActive }) => linkStyle(isActive)}>
+          <a target="_blank" href="mailto:jorgedabalina@gmail.com?Subject=Hola!" rel="noopener noreferrer">
             E-mail
           </a>
 
-         
+
         </li>
-        
+
       </ul>
     </nav>
   )

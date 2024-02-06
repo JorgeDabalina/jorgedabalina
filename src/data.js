@@ -504,6 +504,43 @@ export const pagesData = [
       },
     ],
   },
+   //----------------------------------------------------------------------------------------------------------------
+  // PROYECTO 11
+  //----------------------------------------------------------------------------------------------------------------
+  {
+    id: 11,
+    category: SECTION.PROYECTOS,
+    navTitle: 'Music',
+    pathNav: '/projects/music',
+    title: 'Music',
+    details: {
+      media: 'sound',
+      year: '2023',
+    },
+    featured: {
+      type: MEDIA_TYPE.SOUNDCLOUD,
+      src: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1081321042%3Fsecret_token%3Ds-TgAGtbJBPzO",
+      alt: ''
+    },
+    description: [
+      {
+        language: 'es',
+        value: "Interferencia emerge como un proyecto pionero en el cruce de la tecnología y el arte, buscando explorar las vastas posibilidades que se abren cuando estos dos mundos colisionan. A través de la creación de experiencias inmersivas, este proyecto se propone como un espacio de reflexión sobre cómo las nuevas tecnologías pueden alterar nuestra percepción de la realidad y fomentar nuevas formas de interacción humana. Con un enfoque en la innovación y la experimentación, Interferencia 1 invita a los participantes a sumergirse en un viaje sensorial único, donde la luz, el sonido y la interactividad se entrelazan para desafiar los límites de lo convencional y abrir caminos hacia nuevas dimensiones creativas."
+      },
+      {
+        language: 'en',
+        value: "Interference emerges as a pioneering project at the intersection of technology and art, seeking to explore the vast possibilities that open up when these two worlds collide. By creating immersive experiences, this project proposes itself as a space for reflection on how new technologies can alter our perception of reality and encourage new forms of human interaction. With a focus on innovation and experimentation, Interference 1 invites participants to immerse themselves in a unique sensory journey, where light, sound, and interactivity intertwine to challenge the boundaries of the conventional and pave the way to new creative dimensions."
+      },
+    ],
+    media: [
+      {
+        type: MEDIA_TYPE.SOUNDCLOUD,
+        src: `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1081321042%3Fsecret_token%3Ds-TgAGtbJBPzO&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`,
+        alt: ''
+      },
+      
+    ],
+  },
 
 
 

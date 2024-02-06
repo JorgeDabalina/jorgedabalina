@@ -76,14 +76,23 @@ const ProjMediaItem = ({ item }) => {
 
     case MEDIA_TYPE.SOUNDCLOUD:
       return (
-        <iframe
-          className="proj-media-soundcloud"
-          title="soundcloud player"
-          width="100%"
-          height="100%"
-          allow="autoplay"
-          src={item.url}
-        ></iframe>
+        // <iframe
+        //   className="proj-media-soundcloud"
+        //   title="soundcloud player"
+        //   width="100%"
+        //   height="100%"
+        //   allow="autoplay"
+        //   src={item.url}
+        // ></iframe>
+          <iframe
+          title="soundcloud"
+         width="100%" height="166"
+         scrolling="no"
+         frameBorder="no"
+         allow="autoplay"
+         src={item.url}>.toString()
+        </iframe>
+
       );
 
     case MEDIA_TYPE.BANDCAMP:
@@ -91,15 +100,15 @@ const ProjMediaItem = ({ item }) => {
 
     case MEDIA_TYPE.SPOTIFY:
       return (
-      // Displaying an album.
-<Spotify link="https://open.spotify.com/album/4lFfj4We5ctZG9IzqRVxzA?si=O53NSiVYQYuVVsKHolnc2g" />
+        // Displaying an album.
+        <Spotify link="https://open.spotify.com/album/4lFfj4We5ctZG9IzqRVxzA?si=O53NSiVYQYuVVsKHolnc2g" />
       );
 
     case MEDIA_TYPE.CODE:
       return (
-      <code>
-        {item.codeText}
-      </code>);
+        <code>
+          {item.codeText}
+        </code>);
 
     default:
       return null;

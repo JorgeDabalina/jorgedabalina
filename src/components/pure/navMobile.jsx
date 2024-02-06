@@ -84,7 +84,7 @@ function NavMobile() {
               </li>
               <li className='nav-item'>
           <a target="_blank" href="https://www.instagram.com/jorge.rido/" rel="noopener noreferrer"
-            className={({ isActive }) => linkStyle(isActive)}>
+            >
             Instagram
           </a>
 
@@ -92,7 +92,7 @@ function NavMobile() {
         </li>
         <li className='nav-item'>
           <a target="_blank" href="mailto:jorgedabalina@gmail.com?Subject=Hola!" rel="noopener noreferrer"
-            className={({ isActive }) => linkStyle(isActive)}>
+            >
             E-mail
           </a>
 
