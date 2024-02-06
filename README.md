@@ -1,10 +1,10 @@
-# README: jorgedabalina.com
+# README: jorgedabalina.es 
 
 My personal portfolio webpage.  
 
 ---
 
-Reworked using React (2024):
+Reworked using React (2023):
 - Auto-populate navbar.
 - Modular project-page.
 - Computer first but responsive.
