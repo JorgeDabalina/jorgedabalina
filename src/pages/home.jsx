@@ -20,6 +20,12 @@ function Home() {
       pathNav: '/projects/delotrolado',
     },
     {
+      src: '/images/grados/grados_2.jpg',
+      alt: '',
+      text: "1.1 Grados (2021)",
+      pathNav: '/projects/1.1grados',
+    },
+    {
       src: '/images/negroponte/negroponte_2.jpg',
       alt: '',
       text: "Negroponte (2021)",
