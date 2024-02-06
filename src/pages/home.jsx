@@ -19,6 +19,12 @@ function Home() {
       text: "Del otro lado (2021)",
       pathNav: '/projects/delotrolado',
     },
+    {
+      src: '/images/grados/grados_2.jpg',
+      alt: '',
+      text: "1.1 Grados (2021)",
+      pathNav: '/projects/1.1grados',
+    },
   ];
 
   useEffect(() => {
