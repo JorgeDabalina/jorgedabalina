@@ -167,18 +167,12 @@ export const pagesData = [
         texts: [
           {
             language: 'es',
-            value: `La calle puede ser observada a través del cristal de una ventana,
-de modo que sus ruidos nos lleguen amortiguados, los movimientos
-se vuelvan fantasmales y toda ella, pese a la transparencia del
-vidrio rígido y frío, aparezca como un ser latente, «del otro lado».
+            value: `La calle puede ser observada a través del cristal de una ventana, de modo que sus ruidos nos lleguen amortiguados, los movimientos se vuelvan fantasmales y toda ella, pese a la transparencia del vidrio rígido y frío, aparezca como un ser latente, «del otro lado». 
 (Kandinsky, 1926)`
           },
           {
             language: 'en',
-            value: `The street can be observed through the window pane, which
-diminishes its sounds so that its movements become phantom-like.
-The street itself, as seen through the transparent ,yet hard and firm,
-pane seems set apart, existing and pulsating as if «beyond».
+            value: `The street can be observed through the window pane, which diminishes its sounds so that its movements become phantom-like. The street itself, as seen through the transparent ,yet hard and firm, pane seems set apart, existing and pulsating as if «beyond».
 (Kandinsky, 1926)`
           }
 

@@ -8,13 +8,13 @@ function Home() {
 
   const images = [
     {
-      src: '/images/entrelazada_1.jpg',
+      src: '/images/entrelazada/entrelazada_1.jpg',
       alt: '',
       text: "Exploración Entrelazada (2021)",
       pathNav: '/projects/exploracionEntrelazada',
     },
     {
-      src: '/images/delotrolado_featured.jpg',
+      src: '/images/delotrolado/delotrolado_featured.jpg',
       alt: '',
       text: "Del otro lado (2021)",
       pathNav: '/projects/delotrolado',

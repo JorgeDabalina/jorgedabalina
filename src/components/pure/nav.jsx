@@ -30,7 +30,7 @@ function Nav() {
             </li>
           ))}
         <li className='nav-separator mt-2'>
-          <>- - -</>
+          <>—</>
         </li>
         <li className='nav-item'>
           <NavLink to='/bio'
