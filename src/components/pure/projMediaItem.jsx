@@ -91,7 +91,6 @@ const ProjMediaItem = ({ item }) => {
 
     case MEDIA_TYPE.SPOTIFY:
       return (
-
       // Displaying an album.
 <Spotify link="https://open.spotify.com/album/4lFfj4We5ctZG9IzqRVxzA?si=O53NSiVYQYuVVsKHolnc2g" />
       );
