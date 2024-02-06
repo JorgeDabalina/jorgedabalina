@@ -74,7 +74,8 @@ export const pagesData = [
         type: MEDIA_TYPE.YOUTUBE,
         src: "BlqZmdY4-NQ?si=BozOVlQhx9Qssidf",
         alt: ''
-      },{
+      },
+      {
         type: MEDIA_TYPE.SPOTIFY,
         src: 'https://open.spotify.com/embed/album/4lFfj4We5ctZG9IzqRVxzA?utm_source=generator',
         alt: ''
@@ -426,9 +427,9 @@ export const pagesData = [
   {
     id: 9,
     category: SECTION.PROYECTOS,
-    navTitle: 'Sistema nervioso Extendido',
+    navTitle: 'Sistema Nervioso Extendido',
     pathNav: '/projects/sne',
-    title: 'Sistema nervioso Extendido #1 (Vista)',
+    title: 'Sistema Nervioso Extendido #1 (Vista)',
     details: {
       media: 'Instalación',
       year: '2023',

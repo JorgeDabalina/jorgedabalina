@@ -19,6 +19,30 @@ function Home() {
       text: "Del otro lado (2021)",
       pathNav: '/projects/delotrolado',
     },
+    {
+      src: '/images/negroponte/negroponte_2.jpg',
+      alt: '',
+      text: "Negroponte (2021)",
+      pathNav: '/projects/negroponte',
+    },
+    {
+      src: '/images/electrica/electrica_1.jpg',
+      alt: '',
+      text: "Materia eléctrica (2021)",
+      pathNav: '/projects/electrica',
+    },
+    {
+      src: '/images/sne/sne_home.jpg',
+      alt: '',
+      text: "Sistema Nervioso Extendido #1 (Vista) (2023)",
+      pathNav: '/projects/sne',
+    },
+    {
+      src: '/images/grados/grados_home.jpg',
+      alt: '',
+      text: "1.1 grados (2023)",
+      pathNav: '/projects/grados',
+    },
   ];
 
   useEffect(() => {
