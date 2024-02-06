@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # README: jorgedabalina.com
 
 My personal portfolio webpage.  
