@@ -1,127 +1,40 @@
 h1 {
-  margin-bottom: 24px;
   font-size: 18px;
+  vertical-align: bottom;
+  margin: 0;
 }
+
 
 h2 {
   font-size: 18px;
-  margin-bottom: 0px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 p {
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-size: 12px;
+  margin: 0;
 }
-
-/* nav {
-  position: sticky;
-} */
-
-/* section {
-  margin-left: 180px;
-} */
 
 
 
-/*
-section img{
-height: 500px;
-width: auto;
-border: 0;
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
-.section-cover {
-position: relative;
-display: inline-flex;
-flex-wrap: wrap;
+a:hover{
+  color: grey;
 }
 
-.cover-menu {
-display: none;
-position:absolute;
-padding: 3px 3px;
-border-width: 2px;
-border-color: black;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-z-index: 10;
-background-color:rgba(255,255,255,0.6);
-}
 
-.cover-menu a{
-color: black;
-text-decoration: none;
-}
 
-#incover-kein-spieler{
-margin-top: 55%;
-margin-left: 40%;
-}
 
-#incover-niss{
-margin-top: 16%;
-margin-left: 33%;
-}
-#incover-soundscapes{
-margin-top: 40%;
-margin-left: 20%;
-}
-#incover-thisplace{
-margin-top: 60%;
-margin-left: 70%;
-}
-#incover-drive{
-margin-top: 20%;
-margin-left: 45%;
-}
-#incover-abomb{
-margin-top: 50%;
-margin-left: 80%;
-}
-#incover-night-city{
-margin-top: 65%;
-margin-left: 50%;
-}
-#incover-toocloser{
-margin-top: 30%;
-margin-left: 40%;
-}
-#incover-cv{
-margin-top: 30%;
-margin-left: 20%;
-}
-#incover-contact{
-margin-top: 60%;
-margin-left: 70%;
-}
-#contact-info{
-padding: 0px 15px 5px 15px;
-margin-top: 20%;
-margin-left: 50%;
-}
 
-.section-cover:hover .cover-menu {
-display: inline-flex;
-}
-.sectiontitle{
-margin-left: 20px;
-position: absolute;
-display:inline-flex;
-flex-wrap: wrap;
-flex-direction: column;
-}
-.sectiontitle-letter{
-margin-top: 0px;
-margin-bottom: 20px;
-font-size: 14px;
-font-weight: bold;
-display: flex;
-position:relative;
-max-height: 500px;
-text-align: center;
-}
-*/
+
+
+
+
+

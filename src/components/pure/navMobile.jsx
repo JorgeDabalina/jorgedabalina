@@ -15,10 +15,10 @@ function NavMobile() {
 
   return (
 
-    <div className='nav d-flex align-items-center justify-content-between'>
-      <h2 className='nav-title'>
-        <NavLink to='/'>SERGIO LECUONA</NavLink>
-      </h2>
+    <div className='nav d-flex align-items-center justify-content-between '>
+      <h1 className='nav-title'>
+        <NavLink to='/'>Jorge Dabaliña</NavLink>
+      </h1>
 
       <button
         className="btn pe-0"
@@ -34,16 +34,16 @@ function NavMobile() {
 
       <div
         className={showMenu ? "offcanvas offcanvas-end py-2 show" : "offcanvas offcanvas-end py-2"}
-        id="offcanvaExample"
+        id="offcanvasExample"
         tabIndex="-1"
         aria-labelledby="offcanvasLabel"
       >
-        <div className="offcanvas-header ">
+        <div className="offcanvas-header">
           <div className="container d-flex align-items-center justify-content-between">
             <h2 className='nav-title'
               id="offcanvasLabel"
               onClick={() => setShowMenu(false)}>
-              <NavLink to='/'>SERGIO LECUONA</NavLink>
+              <NavLink to='/'>Jorge Dabaliña</NavLink>
             </h2>
             <button
               className="btn pe-0"
@@ -58,43 +58,9 @@ function NavMobile() {
         </div>
 
         <div className="offcanvas-body">
-          <div className='container mt-3'>
+          <div className='container '>
             <ul className="navbar-nav justify-content-start">
-              <li className='nav-group-title'>
-                <p><b>Sound_Works</b></p>
-              </li>
-              {list.filter(({ category }) => category === SECTION.SOUND_WORKS)
-                .sort((a, b) => b.id - a.id)
-                .map(({ navTitle, pathNav }, index) => (
-                  <li className='nav-item'
-                    key={index}>
-                    <NavLink to={pathNav}
-                      className={({ isActive }) => linkStyle(isActive)}
-                      onClick={() => setShowMenu(false)}>
-                      {navTitle}
-
-                    </NavLink>
-                  </li>
-                ))}
-              {/* <li className='nav-separator mt-2'>
-                <p><b>Silent_Works</b></p>
-              </li>
-              {list.filter(({ category }) => category === SECTION.SILENT_WORKS)
-                .sort((a, b) => b.id - a.id)
-                .map(({ navTitle, pathNav }, index) => (
-                  <li className='nav-item'
-                    key={index}>
-                    <NavLink to={pathNav}
-                      className={({ isActive }) => linkStyle(isActive)}
-                      onClick={() => setShowMenu(false)}>
-                      {navTitle}
-                    </NavLink>
-                  </li>
-                ))} */}
-              <li className='nav-separator mt-2'>
-                <p><b>Image_Works</b></p>
-              </li>
-              {list.filter(({ category }) => category === SECTION.IMAGE_WORKS)
+              {list.filter(({ category }) => category === SECTION.PROYECTOS)
                 .sort((a, b) => b.id - a.id)
                 .map(({ navTitle, pathNav }, index) => (
                   <li className='nav-item'
@@ -107,13 +73,13 @@ function NavMobile() {
                   </li>
                 ))}
               <li className='nav-separator mt-2'>
-                <>- - -</>
+                <>-</>
               </li>
               <li className='nav-item'>
-                <NavLink to='/about'
+                <NavLink to='/bio'
                   className={({ isActive }) => linkStyle(isActive)}
                   onClick={() => setShowMenu(false)}>
-                  About
+                  Bio & CV
                 </NavLink>
               </li>
             </ul>

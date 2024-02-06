@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 
 const ProjDetails = ({details}) => {
   return (
     <div className='proj-details col'>
-      <p className='text-secondary'>
+      <p className='pt-1'>
           [ {details.media} | {details.year} ]
         </p>
     </div>

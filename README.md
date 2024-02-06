@@ -1,10 +1,10 @@
-# README: sergiolecuona.es 
+# README: jorgedabalina.com
 
 My personal portfolio webpage.  
 
 ---
 
-Reworked using React (2023):
+Reworked using React (2024):
 - Auto-populate navbar.
 - Modular project-page.
 - Computer first but responsive.

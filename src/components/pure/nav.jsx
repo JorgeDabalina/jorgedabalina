@@ -13,46 +13,15 @@ function Nav() {
 
   return (
 
-    <nav className='nav flex-sm-column float-start pt-4 sticky-top'>
-      <h1 className='nav-title'>
-        <NavLink to='/'>SERGIO LECUONA</NavLink>
+    <nav className='nav flex-sm-column float-start pt-4 '>
+      <h1 className='nav-title pb-4'>
+        <NavLink to='/'>Jorge Dabaliña</NavLink>
       </h1>
       <ul>
-        <li className='nav-separator'>
-          <p><b>Sound_Works</b></p>
-        </li>
-        {list.filter(({ category }) => category === SECTION.SOUND_WORKS)
+        {list.filter(({ category }) => category === SECTION.PROYECTOS)
           .sort((a, b) => b.id - a.id )
           .map(({ navTitle, pathNav }, index) => (
-            <li className='nav-item'
-              key={index}>
-              <NavLink to={pathNav}
-                className={({ isActive }) => linkStyle(isActive)}>
-                {navTitle}
-              </NavLink>
-            </li>
-          ))}
-        {/* <li className='nav-separator mt-2'>
-                <p><b>Silent_Works</b></p>
-        </li>
-        {list.filter(({ category }) => category === SECTION.SILENT_WORKS)
-          .sort((a, b) => b.id - a.id )
-          .map(({ navTitle, pathNav }, index) => (
-            <li className='nav-item'
-              key={index}>
-              <NavLink to={pathNav}
-                className={({ isActive }) => linkStyle(isActive)}>
-                {navTitle}
-              </NavLink>
-            </li>
-          ))} */}
-        <li className='nav-separator mt-2'>
-          <p><b>Image_Works</b></p>
-        </li>
-        {list.filter(({ category }) => category === SECTION.IMAGE_WORKS)
-          .sort((a, b) => b.id - a.id )
-          .map(({ navTitle, pathNav }, index) => (
-            <li className='nav-item'
+            <li className='nav-item align-top'
               key={index}>
               <NavLink to={pathNav}
                 className={({ isActive }) => linkStyle(isActive)}>
@@ -64,11 +33,30 @@ function Nav() {
           <>- - -</>
         </li>
         <li className='nav-item'>
-          <NavLink to='/about'
+          <NavLink to='/bio'
             className={({ isActive }) => linkStyle(isActive)}>
-            About
+            Bio & CV
           </NavLink>
+
+         
         </li>
+        <li className='nav-item'>
+          <a target="_blank" href="https://www.instagram.com/jorge.rido/" rel="noopener noreferrer"
+            className={({ isActive }) => linkStyle(isActive)}>
+            Instagram
+          </a>
+
+         
+        </li>
+        <li className='nav-item'>
+          <a target="_blank" href="mailto:jorgedabalina@gmail.com?Subject=Hola!" rel="noopener noreferrer"
+            className={({ isActive }) => linkStyle(isActive)}>
+            E-mail
+          </a>
+
+         
+        </li>
+        
       </ul>
     </nav>
   )

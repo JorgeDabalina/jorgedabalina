@@ -4,6 +4,7 @@ import ProjDetails from '../components/pure/projDetails';
 import ProjMediaItem from '../components/pure/projMediaItem';
 import ProjTitle from '../components/pure/projTitle';
 import pagesData from '../data';
+import '../styles/project.css'
 
 const Project = ({ projectId }) => {
 
@@ -25,17 +26,17 @@ const Project = ({ projectId }) => {
   return (
     <section className='container text-left px-0 overflow-hidden'>
 
-      <div className='proj-header d-flex row gx-2 mb-4 align-items-center'>
+      <div className='proj-header d-flex row mb-4 align-items-bottom'>
         <ProjTitle title={project.title} />
         <ProjDetails details={project.details} />
       </div>
 
       {matches ? (
-
+/* INICIO DEL PROYECTO DE DESKTOP*/
         <div className='proj-content row row-cols-2 g-4'>
           {project.featured ?
             (
-              <div className='proj-featured'>
+              <div className='proj-featured' > 
                 <ProjMediaItem item={project.featured} />
               </div>
             ) : null}
@@ -55,7 +56,7 @@ const Project = ({ projectId }) => {
         </div>
 
       ) : (
-
+/* INICIO DEL PROYECTO DE MOBILE*/
         <div className='proj-content row gy-4'>
           {project.featured ?
             (

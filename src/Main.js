@@ -6,7 +6,7 @@ import pagesData from './data';
 
 import Root from './components/root';
 import Home from './pages/home';
-import About from './pages/about';
+import Bio from './pages/bio';
 import Project from './pages/project';
 import Error from './pages/error';
 
@@ -24,8 +24,8 @@ function Main() {
               element={<Project projectId={id} />}
             />
           ))}
-          <Route path='about'
-            element={<About />} />
+          <Route path='bio'
+            element={<Bio />} />
           <Route path='*'
             element={<Error />} />
         </Route>

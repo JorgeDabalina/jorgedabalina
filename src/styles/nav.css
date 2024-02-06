@@ -5,10 +5,11 @@
   padding: 0;
 }
 
+
 .nav-title a{
   color: inherit;
-  margin-bottom: 24px;
   text-decoration: none; 
+ 
 }
 
 .nav-item a{
@@ -17,17 +18,17 @@
 }
 
 .nav-item .link:hover {
-  color: hotpink;
+  color: grey;
 }
 
 .nav-item .link:focus {
-  color: blueviolet;
+  color: rgb(218, 0, 0);
 }
 
 .nav-item .link-active {
-  color: blue;
+  color: rgb(218, 0, 0);
 }
 
 .nav-item .link-active:hover {
-  color: blue;
+  color: rgb(147, 0, 0);
 }

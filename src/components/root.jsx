@@ -6,37 +6,34 @@ import NavMobile from './pure/navMobile';
 const Root = ({ data }) => {
 
   const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 768px)").matches
+    window.matchMedia("(min-width: 576px)").matches
   )
 
   useEffect(() => {
     window
-      .matchMedia("(min-width: 768px)")
+      .matchMedia("(min-width: 576px)")
       .addEventListener('change', e => setMatches(e.matches));
     console.log('matches', matches);
   });
 
   return (
-    <div className='container-sm text-lefty px-3'
+    <div className='container-s text-lefty px-3'
         style={{minHeight: "95vh"}}>
       { matches ? (
         <div className='row justify-content-sm-center'>
-          <div className='col-sm-auto pb-4 px-4 bg-body'>
+          <div className='col-sm-auto pb-4 px-4 '>
             <Nav />
           </div>
-          <div className='col-auto py-4 px-2 bg-body'>
-            <h1>:</h1>
-          </div>
-          <div className='col-sm-7 py-4 px-4 bg-body'>
+          <div className='col-sm-7 py-4 px-4'>
             <Outlet />
           </div>
         </div>
       ) : (
-        <div className='row justify-content-sm-center'>
-          <div className='col-sm-auto py-4 px-4 bg-body sticky-top'>
+        <div className='row justify-content-sm-center '>
+          <div className='col-sm-auto py-4 px-4 sticky-top bg-body'>
             <NavMobile />
           </div>
-          <div className='col-sm-7 py-0 px-4 bg-body'>
+          <div className='col-sm-7 py-0 px-4 '>
             <Outlet />
           </div>
         </div>
