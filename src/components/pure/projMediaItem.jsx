@@ -1,6 +1,8 @@
 import React from "react";
 import { Spotify } from "react-spotify-embed";
 import { MEDIA_TYPE } from "../../models/project.enum";
+import { Caption } from "caption.jsx";
+
 
 
 const ProjMediaItem = ({ item }) => {
@@ -35,13 +37,30 @@ const ProjMediaItem = ({ item }) => {
         </div>
       );
     case MEDIA_TYPE.IMAGE:
-      return (
-        <img
-          className="proj-media-img w-10 img-fluid"
-          src={item.src}
-          alt={item.alt}
-        />
-      );
+      if (item.caption){
+        return(
+        <div>
+          <img
+            className="proj-media-img w-10 img-fluid"
+            src={item.src}
+            alt={item.alt}
+          />  
+          <Caption caption={item.caption}/>
+          </div>
+        );
+      } else{
+        return(
+            <img
+              className="proj-media-img w-10 img-fluid"
+              src={item.src}
+              alt={item.alt}
+            />  
+          );
+      }
+       
+      
+
+    
 
     /* case MEDIA_TYPE.YOUTUBE:
        return (
@@ -76,21 +95,13 @@ const ProjMediaItem = ({ item }) => {
 
     case MEDIA_TYPE.SOUNDCLOUD:
       return (
-        // <iframe
-        //   className="proj-media-soundcloud"
-        //   title="soundcloud player"
-        //   width="100%"
-        //   height="100%"
-        //   allow="autoplay"
-        //   src={item.url}
-        // ></iframe>
-          <iframe
+        <iframe
           title="soundcloud"
-         width="100%" height="166"
-         scrolling="no"
-         frameBorder="no"
-         allow="autoplay"
-         src={item.url}>.toString()
+          width="100%" height="166"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src={item.url}>.toString()
         </iframe>
 
       );

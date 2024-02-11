@@ -1,10 +1,19 @@
 import React from 'react';
+import DownloadButton from '../components/pure/downloadButton';
+
+const file = "http://localhost:3000/images/interferencia/interferencia_featured.jpg";
+const filetext = "Download CV ";
 
 const Bio = () => {
   return (
+    
+    
+
     <section className='container text-left px-0 overflow-hidden'>
+      
       <div className='about-header row align-items-center'>
         <h1>Bio & CV</h1>
+        
       </div>
 
       <div className='about-body row align-items-center pt-4'>
@@ -13,8 +22,14 @@ const Bio = () => {
           <ul className='list-group mb-4'>
             <li className='list-group-item px-4'>
               Jorge Sánchez Dabaliña is a visual artist and designer based in Valencia, Spain. Jorge is pursuing his masters in multimedia & visual arts at the Politechnic University of Valencia. He is currently a researcher investigating new imaginaries for self-generative and live performed video, with an emphasys in modular programming enviroments and outdated video hardware.
+            
             </li>
+            
           </ul>
+          <ul  className='list-group mb-4'><li className='list-group-item px-4'><div><DownloadButton fileUrl={file} fileText={filetext}/> </div></li></ul>
+          
+
+          
         </div>
 
         <div className="studies">
