@@ -6,6 +6,8 @@ import ProjTitle from '../components/pure/projTitle';
 import pagesData from '../data';
 import '../styles/project.css'
 
+import { Helmet } from 'react-helmet';
+
 const Project = ({ projectId }) => {
 
   const project = pagesData.find((element) => element.id === projectId);
@@ -26,17 +28,23 @@ const Project = ({ projectId }) => {
   return (
     <section className='container text-left px-0 overflow-hidden'>
 
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{project.title}</title>
+        {/* <link rel="canonical" href="http://mysite.com/projects/{project.title}" /> */}
+      </Helmet>
+
       <div className='proj-header d-flex row mb-4 align-items-bottom'>
         <ProjTitle title={project.title} />
         <ProjDetails details={project.details} />
       </div>
 
       {matches ? (
-/* INICIO DEL PROYECTO DE DESKTOP*/
+        /* INICIO DEL PROYECTO DE DESKTOP*/
         <div className='proj-content row row-cols-2 g-4'>
           {project.featured ?
             (
-              <div className='proj-featured' > 
+              <div className='proj-featured' >
                 <ProjMediaItem item={project.featured} />
               </div>
             ) : null}
@@ -56,7 +64,7 @@ const Project = ({ projectId }) => {
         </div>
 
       ) : (
-/* INICIO DEL PROYECTO DE MOBILE*/
+        /* INICIO DEL PROYECTO DE MOBILE*/
         <div className='proj-content row gy-4'>
           {project.featured ?
             (

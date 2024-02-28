@@ -1,7 +1,8 @@
 import React from "react";
+import Caption from "./caption.jsx";
 import { Spotify } from "react-spotify-embed";
 import { MEDIA_TYPE } from "../../models/project.enum";
-import { Caption } from "caption.jsx";
+
 
 
 
@@ -37,56 +38,34 @@ const ProjMediaItem = ({ item }) => {
         </div>
       );
     case MEDIA_TYPE.IMAGE:
-      if (item.caption){
-        return(
+
+      return (
         <div>
           <img
             className="proj-media-img w-10 img-fluid"
             src={item.src}
             alt={item.alt}
-          />  
-          <Caption caption={item.caption}/>
-          </div>
-        );
-      } else{
-        return(
-            <img
-              className="proj-media-img w-10 img-fluid"
-              src={item.src}
-              alt={item.alt}
-            />  
-          );
-      }
-       
-      
-
-    
-
-    /* case MEDIA_TYPE.YOUTUBE:
-       return (
-         <iframe
-           className="proj-media-youtube"
-           width="560"
-           height="315"
-           src= {`https://www.youtube.com/embed/${item.url}`}
-           title="YouTube video player"
-           frameBorder="0"
-           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-           allowFullScreen/>
-       );*/
+          />
+          <Caption caption={item.caption} />
+        </div>
+      );
 
     case MEDIA_TYPE.YOUTUBE:
       return (
-        <iframe
-          className="videoyt"
-          id="ytplayer"
-          type="text/html"
-          title="hello"
-          src={`https://www.youtube.com/embed/${item.src}`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-
-        ></iframe>);
+        <div>
+          <iframe
+            className="videoyt"
+            id="ytplayer"
+            type="text/html"
+            title="hello"
+            src={`https://www.youtube.com/embed/${item.src}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+          <Caption caption={item.caption} />
+        </div>
+        );
+        
 
 
 
@@ -95,6 +74,7 @@ const ProjMediaItem = ({ item }) => {
 
     case MEDIA_TYPE.SOUNDCLOUD:
       return (
+        <div>
         <iframe
           title="soundcloud"
           width="100%" height="166"
@@ -103,8 +83,10 @@ const ProjMediaItem = ({ item }) => {
           allow="autoplay"
           src={item.url}>.toString()
         </iframe>
-
+        <Caption caption={item.caption} />
+        </div>
       );
+
 
     case MEDIA_TYPE.BANDCAMP:
       return null;
@@ -117,9 +99,12 @@ const ProjMediaItem = ({ item }) => {
 
     case MEDIA_TYPE.CODE:
       return (
+        <div> 
         <code>
           {item.codeText}
-        </code>);
+        </code>
+        <Caption caption={item.caption} />
+        </div>);
 
     default:
       return null;

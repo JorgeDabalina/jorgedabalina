@@ -33,6 +33,7 @@ export const pagesData = [
         type: MEDIA_TYPE.IMAGE,
         src: 'https://picsum.photos/200/300',
         alt: 'Test image',
+        caption: "Test Caption",
       },
     ],
   },
@@ -53,7 +54,7 @@ export const pagesData = [
       type: MEDIA_TYPE.IMAGE,
       src: '/images/negroponte/negroponte_featured.jpg',
       alt: 'Portada del EP Negroponte',
-      caption: "hola",
+      caption: "Portada del EP Negroponte",
     },
     description: [
       {
@@ -74,12 +75,14 @@ export const pagesData = [
       {
         type: MEDIA_TYPE.YOUTUBE,
         src: "BlqZmdY4-NQ?si=BozOVlQhx9Qssidf",
-        alt: 'Video del EP completo'
+        alt: 'Video del EP completo',
+        caption: 'Video del EP completo'
       },
       {
         type: MEDIA_TYPE.SPOTIFY,
         src: 'https://open.spotify.com/embed/album/4lFfj4We5ctZG9IzqRVxzA?utm_source=generator',
-        alt: ''
+        alt: '',
+        caption: '',
       },
     ],
   },
@@ -101,7 +104,7 @@ export const pagesData = [
       type: MEDIA_TYPE.IMAGE,
       src: '/images/entrelazada/entrelazada_featured.jpg',
       alt: 'Proyección de Exploración entrelazada en la Fachada Media de Etopía',
-      caption: true,
+      caption: 'Proyección de Exploración entrelazada en la Fachada Media de Etopía',
     },
     description: [
       {
@@ -118,19 +121,19 @@ export const pagesData = [
         type: MEDIA_TYPE.YOUTUBE,
         src: "kSesEkcWuhw?si=BPeoIFJxXldAjV8A",
         alt: 'Exploración entrelazada - Video Academia Fachada Media',
-        caption: false,
+        caption: 'Exploración entrelazada - Video Academia Fachada Media',
       },
       {
         type: MEDIA_TYPE.YOUTUBE,
         src: "6pwbap02hjs?si=jZbKMlnNvVqvN2o4",
         alt: 'Exploración entrelazada - Video Academia Fachada Media',
-        caption: true,
+        caption: 'Exploración entrelazada - Video Academia Fachada Media',
       },
       {
         type: MEDIA_TYPE.IMAGE,
         src: '/images/entrelazada/entrelazada_1.jpg',
         alt: 'Fotografía de la fachada media proyectando Exploración',
-        caption: true,
+        caption: 'Fotografía de la fachada media proyectando Exploración',
       },
     ],
   },
@@ -151,7 +154,8 @@ export const pagesData = [
     featured: {
       type: MEDIA_TYPE.YOUTUBE,
       src: "6ZEjyrW1N_I?si=q6NtNM-CQEhf0TFz",
-      alt: 'Shortfilm. Jorge Dabaliña - Del otro lado (2021)'
+      alt: 'Shortfilm. Jorge Dabaliña - Del otro lado (2021)',
+      caption: 'Shortfilm. Jorge Dabaliña - Del otro lado (2021)'
     },
     description: [
       {
@@ -171,7 +175,8 @@ export const pagesData = [
       {
         type: MEDIA_TYPE.IMAGE,
         src: '/images/delotrolado/delotrolado_featured.jpg',
-        alt: 'Fotograma exytraído de Del otro lado - Jorge Dabaliña'
+        alt: 'Fotograma exytraído de Del otro lado - Jorge Dabaliña',
+        caption: 'Fotograma exytraído de Del otro lado - Jorge Dabaliña',
       },
       {
         type: MEDIA_TYPE.TEXT,
