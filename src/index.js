@@ -8,9 +8,7 @@ import Main from './Main';
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-if (window.location.pathname !== '/') {
-  sessionStorage.redirect = window.location.href;
-}
+
 root.render(
   <React.StrictMode>
       <Main />
